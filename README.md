@@ -5,6 +5,7 @@
 
 ***
 ### Objetivo
+Utilizar la Api Google Maps para crear un mapa que traze rutas desde punto de partida hasta el punto de destino, y que tenga la opción de mostrarte tu ubicación
 
 ### Recursos
 * Api de google maps
