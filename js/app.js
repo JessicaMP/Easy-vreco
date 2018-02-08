@@ -5,7 +5,7 @@ let laboratoriaLima = {lat: -12.1191427, lng: -77.0349046};
 let inputGoing = document.getElementById('going'),
     inputFinish = document.getElementById('finish');
 
-let image = 'assets/icons/bici2.ico';
+let image = '../assets/icons/bici2.ico';
 
 function initMap() {
 

@@ -17,9 +17,11 @@ let counter = () => {
 //____________SPLASH________________
 let begin = () => {
   setTimeout(() => {
-    $('#splash').fadeOut();
-    $('#page-map').removeClass('hide');
+    $('#splash');
+    window.location.href = 'views/index.html';
   }, 4000);
+
+  //$('location').attr('href', 'views/index.html');
   counter();
 };
 // Materialize
