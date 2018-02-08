@@ -38,7 +38,11 @@ function initMap() {
     }
     infowindow.open(map, markadorLaboratoria);
   });
-  document.getElementById('encuentrame').addEventListener('click', buscar);
+  document.getElementById('encuentrame').addEventListener('click', () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
+    }
+  });
 };
 
 let latitud,longitud;
@@ -80,11 +84,6 @@ let funcionError = (error) => {
   alert('Tenemos un problema con encontrar tu ubicación');
 };
 
-let buscar = () => {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
-  }
-};
 document.getElementById('traceRoute').addEventListener('click', () => {
   let directionsService = new google.maps.DirectionsService;
   let directionsDisplay = new google.maps.DirectionsRenderer;
