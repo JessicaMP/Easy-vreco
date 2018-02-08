@@ -1,0 +1,23 @@
+{
+  "name": "Easy-vreco",
+  "version": "1.0.0",
+  "description": "* Curso: Construye una single page app (SPA) Multi-usuario consumiendo data remota\r * Unidad 2:  Geolocation\r * Integrantes: _Noelia Tello y Jessica Manturano_",
+  "main": "splash.js",
+  "scripts": {
+    "build": "babel --presets env src -d public/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JessicaMP/Easy-vreco.git"
+  },
+  "author": "Noelia Tello y Jessica Manturano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JessicaMP/Easy-vreco/issues"
+  },
+  "homepage": "https://github.com/JessicaMP/Easy-vreco#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
