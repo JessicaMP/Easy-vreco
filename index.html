@@ -2,27 +2,68 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Encuéntrame</title>
+    <title>EASY-VRECO</title>
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Monoton" rel="stylesheet">
+    <link rel="icon" sizes="57x57" href="https://lms.laboratoria.la/icons-49c1440fbef0a99a6e70abd313b72380/apple-touch-icon-60x60.png">
+    <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div id="map"></div>
-    <div class="box">
-      <div class="style">
-        <img src="assets/images/shape.png" alt="Punto de partida">
-        <input id="going" type="text" placeholder="Ingresa tu punto de partida">
+    <section id="splash">
+      <center><h1 class="title">EASY-VRECO</h1></center>
+      <div class="row">
+        <div class="col l12">
+          <figure class="center col l4 offset-l2">
+            <img src="assets/images/bici.gif" alt="Mujer en bicicleta" class="responsive-img bici">
+          </figure>
+          <div class="center col l4">
+            <p class="intro">Te ayudamos a encontrar la ruta que necesitas.<br> Pruébalo!</p>
+          </div>
+        </div>
       </div>
-      <div class="style">
-        <img src="assets/images/shape2.png" alt="Punto de destino">
-        <input id="finish" type="text" placeholder="Ingresa tu destino">
+      <div class="loading-page">
+        <div class="counter center">
+          <h2 class="effect align-center">0%</h2>
+          <hr/>
+        </div>
       </div>
-      <div class="style">
-        <button id="traceRoute">Trazar ruta</button>
-        <button id="encuentrame">Encuéntrame</button>
-      </div>
-    </div>
 
+    </section>
+    <section id="page-map" class="hide">
+      <div class="row">
+      <div class="box">
+
+        <div class="style col l2">
+          <a id="traceRoute" class="waves-effect waves-light btn amber darken-2">Trazar ruta</a>
+        </div>
+        <div class="style amber darken-2 col l3 inputs">
+          <div class="col l2">
+            <img src="assets/images/shape.png" alt="Punto de partida" class="responsive-img">
+          </div>
+          <div class="col l10">
+            <input id="going" type="text" placeholder="Ingresa tu punto de partida">
+          </div>
+        </div>
+        <div class="style amber darken-2 col l3 inputs">
+          <div class="col l2">
+            <img src="assets/images/shape2.png" alt="Punto de destino" class="responsive-img">
+          </div>
+          <div class="col l10">
+            <input id="finish" type="text" placeholder="Ingresa tu destino">
+          </div>
+        </div>
+        <div class="style col l2">
+          <a id="encuentrame" class="waves-effect waves-light btn amber darken-2">Encuéntrame</a>
+        </div>
+
+      </div>
+      <div id="map"></div>
+    </div>
+    </section>
+    <script src="vendors/jquery/jquery-3.3.1.min.js"></script>
+    <script src="vendors/materialize/js/materialize.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdy4PEL2H4HYQq1hkbg7qQZ1861pdf7sg&callback=initMap&libraries=places"></script>
+    <script src="js/splash.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

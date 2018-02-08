@@ -1,15 +1,101 @@
+/*____________SPLASH________________*/
+#splash {
+  background: linear-gradient(#fa2, white);
+  min-height: 100%;
+  position: absolute;
+  width: 100%;
+
+}
+
+.title {
+  font-family: 'Monoton', cursive;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.intro {
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100);
+.effect{
+  margin: 0;
+  padding: 0;
+}
+
+.loading-page {
+  display: flex;
+  justify-content: center;
+}
+
+.counter h2 {
+  color: white;
+  font-size: 70px;
+  margin-top: -10px;
+  -webkit-text-stroke: 4px #aab;
+  font-weight: bold;
+}
+
+.counter hr {
+  background: black;
+  border: none;
+  height: 3px;
+}
+
+.counter {
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+}
+
+.bici {
+  width: 350px;
+}
+/*____________MAP________________*/
 div#map {
+  width: 100%;
+  height: 85vh;
+  border: 5px solid #fa2;
+}
+
+.box {
+  width: 100%;
+}
+
+.style {
+  box-sizing: border-box;
+  padding: 2px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 5px;
+}
+
+.style img {
+  margin-top: 15px;
+}
+
+.inputs {
+  height: 50px;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.here {
+  background-color: #171004;
+  color: white;
+  font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .box {
     width: 100%;
-    height: 90vh;
+    margin-left: 120px;
   }
-  
-  .style {
-    background-color: #fa2;
-    padding: 20px;
-    color: white;
-    position: relative;
-    bottom: 85px;
-    font-size: 20px;
-    font-weight: bold;
-    display: inline-block;
-  }
+
+}
